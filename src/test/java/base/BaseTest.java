@@ -13,7 +13,8 @@ public class BaseTest  {
     protected Browser browser;
     protected Page page;
 
-    @BeforeMethod
+    // before method
+    @BeforeTest
     public void setup() {
             playwright = Playwright.create();
             browser = playwright.chromium().launch(
